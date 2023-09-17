@@ -28,3 +28,8 @@ indicators.forEach((indicator, i) => {
 });
 
 showSlide(currentSlide);
+
+setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}, 3000);
